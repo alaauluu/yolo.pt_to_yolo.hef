@@ -1,8 +1,18 @@
-# Конвертация YOLO (.pt) → Hailo (.hef) на Ubuntu
+# 📌 Конвертация YOLO (.pt) → Hailo (.hef) на Ubuntu
 
 Пошаговая инструкция по конвертации модели YOLO (`.pt`) в формат `.onnx`, а затем в `.hef` для запуска на **Hailo-8**.
 
-## Содержание
+<p>
+  <img src="https://img.shields.io/badge/OS-Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" alt="Ubuntu">
+  <img src="https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10">
+  <img src="https://img.shields.io/badge/YOLO-Ultralytics-00FFFF?style=flat-square&logo=yolo&logoColor=black" alt="Ultralytics">
+  <img src="https://img.shields.io/badge/Hailo-8-1a1a1a?style=flat-square&logo=hackthebox&logoColor=00C7B7" alt="Hailo-8">
+  <img src="https://img.shields.io/badge/HailoRT-4.21.0-lightgrey?style=flat-square" alt="HailoRT 4.21.0">
+  <img src="https://img.shields.io/badge/DFC-3.31.0-lightgrey?style=flat-square" alt="Dataflow Compiler 3.31.0">
+  <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square" alt="Status">
+</p>
+
+## 📑 Содержание
 
 - [Требования](#требования)
 - [1. Установка Python 3.10 и системных зависимостей](#1-установка-python-310-и-системных-зависимостей)
@@ -13,11 +23,11 @@
 - [6. Установка Hailo Model Zoo](#6-установка-hailo-model-zoo)
 - [7. Компиляция .onnx → .hef](#7-компиляция-onnx--hef)
 
-## Требования
+## 🧩 Требования
 
-- Ubuntu (x86_64)
-- Аккаунт на [Hailo Developer Zone](https://hailo.ai/developer-zone/software-downloads/)
-- Целевое устройство: **Hailo-8**
+- 🐧 Ubuntu (x86_64)
+- 🔑 Аккаунт на [Hailo Developer Zone](https://hailo.ai/developer-zone/software-downloads/)
+- 🎯 Целевое устройство: **Hailo-8**
 
 ---
 
@@ -104,4 +114,4 @@ hailomz compile \
         /model.22/cv3.2/cv3.2.2/Conv
 ```
 
-Осталось только дождаться завершения компиляции — на выходе получите готовый файл `.hef`.
+Осталось только дождаться завершения компиляции — на выходе получите готовый файл `.hef`. ✅🚀
