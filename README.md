@@ -70,6 +70,7 @@ model.export(format="onnx", imgsz=640, opset=19)
 - `hailo_dataflow_compiler-3.31.0-py3-none-linux_x86_64.whl`
 
 > ⚠️ **Важно:** для успешной сборки нужно принудительно установить `jaxlib-0.4.13-cp310-cp310-manylinux2014_x86_64.whl` **до** установки Dataflow Compiler.
+> https://storage.googleapis.com/jax-releases/jax_releases.html
 
 ```bash
 pip install jaxlib-0.4.13-cp310-cp310-manylinux2014_x86_64.whl
